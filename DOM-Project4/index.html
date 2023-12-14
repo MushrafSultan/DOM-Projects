@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's Play Game!</title>
+
+    <!-- New Font link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- CSS file link -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Bulding Guess the number Game! -->
+
+
+    <h3>Let's Play number guessing Game!</h2>
+
+    <div class="container">
+        <form>
+            <p>Try and guess a random number between 1 and 100.</p>
+            <p>You have 10 attempts to guess a number.</p>
+            <h2 id="victory">Guess a number</h2>
+            <input type="text" id="userInput">
+            <!-- </br> -->
+            <input type="button" value="Submit" id="sumbitBtn">
+            
+            <div class="previousInfo">
+                <label>Previous Guesses: <span id="previousGuesses"></span></label>
+                </br>
+                <label>Remaining Guesses: <span id="remainingGuesses">1</span></label>
+            </div>
+        </form>
+    </div>
+
+    <script src="./guessNumGame.js"></script>
+</body>
+</html>
